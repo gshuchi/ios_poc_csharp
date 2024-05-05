@@ -32,7 +32,6 @@ namespace AppiumIOSPOC.Utils
             driverOptions.AddAdditionalAppiumOption("appium:autoAcceptAlerts", true);
             driverOptions.AddAdditionalAppiumOption("newCommandTimeout", 20);
 
-
             appiumDriver = new IOSDriver(new Uri("http://127.0.0.1:4723"), driverOptions);
             appiumDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 

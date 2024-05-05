@@ -58,6 +58,7 @@ namespace AppiumIOSPOC.Utils
             var move4 = finger.CreatePointerMove(CoordinateOrigin.Viewport, endX, endY, TimeSpan.FromSeconds(5));
             var actionRelease2 = finger.CreatePointerUp(MouseButton.Left);
 
+
             sequence.AddAction(move3);
             sequence.AddAction(actionPress2);
             sequence.AddAction(pause2);
